@@ -7,7 +7,13 @@
 
 A complete customer churn prediction system with a FastAPI backend and React TypeScript frontend using shadcn/ui components. The model achieves **90% recall** in detecting customers at risk of churn.
 
----
+## Table of contents
+- [Features](#features)
+- [Model Perforrmance](#model-performance)
+- [Installation](#installation)
+    - [Backend](#backend)
+    - [Frontend](#frontend)
+- [Features](#features)
 
 ## Features
 
@@ -34,3 +40,69 @@ The model is optimized for **high recall** to minimize false negatives (missing 
 **Business Context:**
 In churn prediction, false negatives (missing a customer who will leave) are **5–10x more costly** than false positives. A 90% recall means we identify **9 out of 10 customers at risk**.
 
+## Installation
+### Backend
+1. Create virtual environment
+``` 
+python -m venv venv
+source venv/bin/activate  # On Windows: venv\Scripts\activate
+```
+2. Install dependencies
+```
+pip install -r requirements.txt
+```
+3. Start FastApi server
+```
+uvicorn api.main:app --reload
+```
+
+### Frontend
+1. Navigate to the React project directory
+```
+cd frontend/churn-prediction
+```
+2. Install dependencies
+```
+npm install
+```
+3. Run app
+```
+npm run dev
+```
+
+## Usage
+1. Open the frontend application at http://localhost:5173
+
+2. Fill in the customer data across 5 tabs:
+    - Demographics: Gender, Senior Citizen, Partner, Dependents, Tenure
+    - Phone Services: Phone Service, Multiple Lines
+    - Internet Services: Internet Service, Streaming TV, Streaming Movies
+    - Security: Online Security, Online Backup, Device Protection, Tech Support
+    - Billing: Contract, Paperless Billing, Payment Method, Charges
+
+3. Click "Predict Churn" to get the result
+
+4. View the prediction, probability, and business recommendation
+
+## Technologies Used
+### Backend
+* FastAPI: Modern web framework for APIs
+
+* XGBoost: Gradient boosting library
+
+* scikit-learn: Machine learning utilities
+
+* imbalanced-learn: SMOTE for handling imbalanced data
+
+* Pydantic: Data validation
+
+### Frontend
+* React: UI library
+
+* TypeScript: Type safety
+
+* shadcn/ui: Beautiful, accessible components
+
+* TailwindCSS: Styling
+
+* Vite: Build tool
