@@ -1,4 +1,4 @@
-# 🔮 Churn Prediction API & Frontend
+# Churn Prediction API & Frontend
 
 ![FastAPI](https://img.shields.io/badge/FastAPI-005571?style=for-the-badge\&logo=fastapi)
 ![React](https://img.shields.io/badge/React-20232A?style=for-the-badge\&logo=react\&logoColor=61DAFB)
@@ -9,7 +9,7 @@ A complete customer churn prediction system with a FastAPI backend and React Typ
 
 ---
 
-## ✨ Features
+## Features
 
 * **High Recall Model**: 90% recall for churn detection (identifies 9 out of 10 customers who will churn)
 * **Interactive Web Interface**: Built with React, TypeScript, and shadcn/ui
@@ -20,7 +20,7 @@ A complete customer churn prediction system with a FastAPI backend and React Typ
 
 ---
 
-## 📊 Model Performance
+## Model Performance
 
 The model is optimized for **high recall** to minimize false negatives (missing customers who will churn):
 
@@ -33,3 +33,4 @@ The model is optimized for **high recall** to minimize false negatives (missing 
 
 **Business Context:**
 In churn prediction, false negatives (missing a customer who will leave) are **5–10x more costly** than false positives. A 90% recall means we identify **9 out of 10 customers at risk**.
+
