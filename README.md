@@ -72,7 +72,7 @@ npm run dev
 ```
 
 ## Usage
-1. Open the frontend application at http://localhost:5173
+1. Open the frontend application.
 
 2. Fill in the customer data across 5 tabs:
     - Demographics: Gender, Senior Citizen, Partner, Dependents, Tenure
