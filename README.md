@@ -13,7 +13,8 @@ A complete customer churn prediction system with a FastAPI backend and React Typ
 - [Installation](#installation)
     - [Backend](#backend)
     - [Frontend](#frontend)
-- [Features](#features)
+- [Usage](#usage)
+- [Technologies used](#technologies-used)
 
 ## Features
 
